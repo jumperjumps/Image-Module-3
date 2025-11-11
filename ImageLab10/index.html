@@ -5,11 +5,22 @@
   </head>
   <body>
     <a-scene>
-      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
+      <a-assets>
+        <img id="sky" src="assets/BeachSky.jpg" alt=""></log>
+        <img id="sand" src="assets/Sand.jpg" alt=""></log>
+        <img id="ball" src="assets/Beach ball.jpeg" alt=""></log>
+      </a-assets>
+            <a-sky src="#sky"></a-sky>
+      <a-cone src="#sand" position="-2.5 1.3 -1.7" rotation="0 45 0" radius-bottom=".15" height=".5" ></a-cone>
+      <a-cone src="#sand" position="-3.3 1.3 -1.7" rotation="0 45 0" radius-bottom=".15" height=".5" ></a-cone>
+      <a-cone src="#sand" position="-3 1.3 -1.4" rotation="0 45 0" radius-bottom=".15" height=".5" ></a-cone>
+      <a-cone src="#sand" position="-3 1.3 -2" rotation="0 45 0" radius-bottom=".15" height=".5" ></a-cone>
+
+      <a-box src="#sand" position="-3 0.5 -1.75" radious="-1 0.5 -3" rotation="0 45 0" ></a-box>
+      <a-sphere src="#ball" position="-2 3 -6" radius="1.25" ></a-sphere>
+      <!-- <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder> -->
+      <!-- <a-plane src="towel" position="0 0 -4" rotation="-90 0 0" width="4" height="4" ></a-plane> -->
+      <!-- <a-sky color="#ECECEC"></a-sky> -->
     </a-scene>
   </body>
 </html>
