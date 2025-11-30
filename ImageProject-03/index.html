@@ -7,6 +7,8 @@
     <a-scene>
       <a-assets>
         <img id="forest" src="assets/forest.jpg" alt=""></log>
+        <img id="checker" src="assets/checker.jpg" alt=""></log>
+        
         <a-asset-item id="Board" src="assets/Board.obj"></a-asset-item>
         <a-asset-item id="Queen" src="assets/Queen.obj"></a-asset-item>
         <a-asset-item id="King" src="assets/King.obj"></a-asset-item>
@@ -19,7 +21,7 @@
       </a-assets>
 
       <a-sky src="#forest"></a-sky>
-      <a-obj-model src="#Board" position="-12 -40 -1" material="shader:flat;src:checker.jpg"></a-obj-model>
+      <a-obj-model src="#Board" position="-12 -40 -1" material="src:#checker"></a-obj-model>
       
       <!-- black Pieces -->
       <a-obj-model src="#Rook" position="33 -39.5 45" color="#000000"></a-obj-model>
@@ -59,7 +61,6 @@
       <a-obj-model src="#Pawn" position="-45 -39.5 -30" color="#FFFFFF"></a-obj-model>
       <a-obj-model src="#Pawn" position="-57 -39.5 -30" color="#FFFFFF"></a-obj-model>
 
-      <!-- Stumps -->
       
     </a-scene>
   </body>
